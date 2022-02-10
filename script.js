@@ -1,5 +1,5 @@
 var Target_hypo_Input = 0;
-var Target_hypo = 0;
+var Target_hypo = 500;
 var target_loose_pulp_viscosity = 450;
 var eop_prev1 = 0;
 var eop_prev2 = 0;
