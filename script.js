@@ -30,7 +30,7 @@ function showInfo() {
 	  str += "<h2>Recommended Hypo Dosage: "+ hypo_addition.toFixed(3) +" L/min<br></h2>";
 	}
 
-	var Target_hypo = Target_hypo_Input;
+	Target_hypo = Target_hypo_Input;
 	document.getElementById('info').innerHTML = str;
 	document.getElementById('inputInfo').style.display = "none";
 	document.getElementById('outputInfo').style.display = "block";
