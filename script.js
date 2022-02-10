@@ -1,5 +1,5 @@
-var Target_hypo_Input = 0;
-var Target_hypo = 500;
+var target_hypo_Input = 0;
+var target_hypo = 500;
 var target_loose_pulp_viscosity = 450;
 var eop_prev1 = 0;
 var eop_prev2 = 0;
@@ -14,7 +14,7 @@ function showInfo() {
 	eop_prev1 = document.getElementById('eopViscosity1').value;
 	hypo_visc_prev1 = document.getElementById('hypoViscosity1').value;
 	hypo_add_prev1 = document.getElementById('hypoAddition1').value;
-	Target_hypo_Input = document.getElementById('prevTargetHypo').value;
+	target_hypo_Input = document.getElementById('prevTargetHypo').value;
 	target_loose_pulp_viscosity = document.getElementById('targetLoosePulpViscosity').value; //450 by default
 
 	var hypo_addition = -24.63734984 - 0.007417852*eop_prev2 + 0.018294762*eop_prev1-0.027551462*hypo_visc_prev2 
@@ -30,7 +30,7 @@ function showInfo() {
 	  str += "<h2>Recommended Hypo Dosage: "+ hypo_addition.toFixed(3) +" L/min<br></h2>";
 	}
 
-	Target_hypo = Target_hypo_Input;
+	target_hypo = target_hypo_Input;
 	document.getElementById('info').innerHTML = str;
 	document.getElementById('inputInfo').style.display = "none";
 	document.getElementById('outputInfo').style.display = "block";
@@ -39,7 +39,7 @@ function showInfo() {
 		// Hypo_viscosity: Hypo_viscosity,
 		// Loose_pulp_viscosity: Loose_pulp_viscosity,
 		// Hypo_addition_Input: Hypo_addition_Input,
-		Target_hypo_Input: Target_hypo_Input,
+		target_hypo_Input: target_hypo_Input,
 		Target_hypo:Target_hypo,
 		target_loose_pulp_viscosity: target_loose_pulp_viscosity,
 		// delta3: delta3, 
