@@ -40,7 +40,7 @@ function showInfo() {
 		// Loose_pulp_viscosity: Loose_pulp_viscosity,
 		// Hypo_addition_Input: Hypo_addition_Input,
 		target_hypo_Input: target_hypo_Input,
-		Target_hypo:Target_hypo,
+		target_hypo:target_hypo,
 		target_loose_pulp_viscosity: target_loose_pulp_viscosity,
 		// delta3: delta3, 
 		// delta3_percent: delta3_percent,
