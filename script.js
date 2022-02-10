@@ -56,7 +56,7 @@ function showInfo() {
 	hypo_visc_prev2 = hypo_visc_prev1
 	hypo_visc_prev1 = Hypo_viscosity
 	hypo_add_prev2 = hypo_add_prev1
-	hypo_add_prev1 = hypo_addition
+	hypo_add_prev1 = Hypo_addition_Input
 	Target_hypo = target_hypo_viscosity.toFixed(3);
 	document.getElementById('info').innerHTML = str;
 	document.getElementById('inputInfo').style.display = "none";
