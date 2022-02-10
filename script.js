@@ -80,7 +80,7 @@ function resetForm() {
 	document.getElementById('outputInfo').style.display = "none";
 
 	document.getElementById("inputForm").reset();
-	document.getElementById('prevTargetHypo').value = Target_hypo;
+	document.getElementById('prevTargetHypo').value = 500;
 	document.getElementById('targetLoosePulpViscosity').value = 450;
 }
 
