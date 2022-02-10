@@ -38,7 +38,7 @@ function showInfo() {
 	else{
 		str += "<h2 style='color: green;'>Delta3 change in range<br></h2>";
 	}
-	str += "<h2> Predicted EOP value = "+eop_predicted+"<br>";
+// 	str += "<h2> Predicted EOP value = "+eop_predicted+"<br>";
 	str += "Target Hypo Viscosity = " + target_hypo_viscosity.toFixed(3) + "<br>";
 	str += "Predicted delta2 = "+ delta2 +"<br></h2>";
 	if (hypo_addition < 0.0){
@@ -72,7 +72,7 @@ function showInfo() {
 		delta3: delta3, 
 		delta3_percent: delta3_percent,
 		target_hypo_viscosity: target_hypo_viscosity,
-		eop_predicted:eop_predicted,
+// 		eop_predicted:eop_predicted,
 		hypo_addition:hypo_addition,
 		delta2: delta2,
 		delta2_prev : delta2_prev,
