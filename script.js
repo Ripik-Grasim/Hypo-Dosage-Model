@@ -16,10 +16,10 @@ function showInfo() {
 	hypo_add_prev1 = document.getElementById('hypoAddition1').value;
 	target_hypo_Input = document.getElementById('prevTargetHypo').value;
 	target_loose_pulp_viscosity = document.getElementById('targetLoosePulpViscosity').value; //450 by default
-
-	var hypo_addition = -24.63734984 - 0.007417852*eop_prev2 + 0.018294762*eop_prev1-0.027551462*hypo_visc_prev2 
-	+ 0.041237008*hypo_visc_prev1 - 0.206650126*hypo_add_prev2 + 0.978032265*hypo_add_prev1 + 0.033991342*500
-
+	var bias_ratio = 4*(500-hypo_visc_prev1)/hypo_visc_prev1;
+	var hypo_addition = (-24.63734984 - 0.007417852*eop_prev2 + 0.018294762*eop_prev1-0.027551462*hypo_visc_prev2 
+	+ 0.041237008*hypo_visc_prev1 - 0.206650126*hypo_add_prev2 + 0.978032265*hypo_add_prev1 + 0.033991342*500)*(1-bias_ratio)
+	
 	var str = "";
 
 	str += "<h2>Target Loose Pulp Viscosity = " + target_loose_pulp_viscosity + "<br></h2>";
