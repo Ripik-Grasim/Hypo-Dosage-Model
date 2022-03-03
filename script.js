@@ -11,13 +11,10 @@ var hypo_addition = 0;
 var bias_term = 0
 function showInfo() {
 	eop_prev2 = document.getElementById('eopViscosity2').value;
-	hypo_visc_prev2 = document.getElementById('hypoViscosity2').value;
-
 	eop_prev1 = document.getElementById('eopViscosity1').value;
+	hypo_visc_prev2 = document.getElementById('hypoViscosity2').value;
 	hypo_visc_prev1 = document.getElementById('hypoViscosity1').value;
-
 	hypo_add_prev1 = document.getElementById('hypoAddition1').value;
-	eop_current = document.getElementById('eopViscosity').value;
 
 	Target_hypo_Input = document.getElementById('prevTargetHypo').value;
 	target_loose_pulp_viscosity = document.getElementById('targetLoosePulpViscosity').value; //450 by default
@@ -25,10 +22,10 @@ function showInfo() {
 	var diff = sum -1000;
 	var final = 0.05*diff;
 	bias_term = final;
-	if (eop_current < 560){
+	if (eop_prev1 < 560){
 		hypo_addition = (-4.216047661) - (0.113834977*eop_prev2) + (0.127907925*eop_prev1) + (0.776974139*hypo_add_prev1) + (bias_term);
 	}
-	else if (eop_current > 626){
+	else if (eop_prev1 > 626){
 		hypo_addition = (-22.70931995) - (0.169091429*eop_prev2) + (0.209982459*eop_prev1) + (0.914237136*hypo_add_prev1) + (bias_term);
 	}
 	else{
