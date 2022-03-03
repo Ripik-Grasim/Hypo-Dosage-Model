@@ -39,7 +39,7 @@ function showInfo() {
 	  str += "<h2>Recommended Hypo Dosage Value less than zero<br></h2>";
 	}
 	else{
-	  str += "<h2>Recommended Hypo Dosage: "+ hypo_addition.toFixed(2) +" L/min<br></h2>";
+	  str += "<h2>Recommended Hypo Dosage: "+ hypo_addition.toFixed(3) +" L/min<br></h2>";
 	}
 
 	Target_hypo = Target_hypo_Input;
